@@ -167,7 +167,7 @@ export const VOLUME_REFERENCES: ReferenceItem[] = [
     emoji: '🥛',
     value: 1000,
     unitName: '<ruby>本<rt>ほん</rt></ruby>',
-    description: 'お店で<ruby>売<rt>う</rt></ruby>っている<ruby>大<rt>おお</rt></ruby>きい<ruby>方<rt>ほう</rt></ruby>の<ruby>牛乳<rt>ぎゅうにゅう</rt></ruby>パック1<ruby>本<rt>ほん</rt></ruby>だよ。',
+    description: 'お<ruby>店<rt>みせ</rt></ruby>で<ruby>売<rt>う</rt></ruby>っている<ruby>大<rt>おお</rt></ruby>きい<ruby>方<rt>ほう</rt></ruby>の<ruby>牛乳<rt>ぎゅうにゅう</rt></ruby>パック1<ruby>本<rt>ほん</rt></ruby>だよ。',
     svgType: 'milk-carton',
   },
   {
@@ -410,7 +410,7 @@ export const AREA_REFERENCES: ReferenceItem[] = [
     emoji: '🚗',
     value: 3.3,
     unitName: '<ruby>台分<rt>だいぶん</rt></ruby>',
-    description: 'おうちやお店の<ruby>駐車場<rt>ちゅうしゃじょう</rt></ruby>に、<ruby>車<rt>くるま</rt></ruby>を1<ruby>台<rt>だい</rt></ruby>とめるスペースの<ruby>広さ<rt>ひろさ</rt></ruby>だよ。これがちょうど「1<ruby>坪<rt>つぼ</rt></ruby>」！',
+    description: 'おうちやお<ruby>店<rt>みせ</rt></ruby>の<ruby>駐車場<rt>ちゅうしゃじょう</rt></ruby>に、<ruby>車<rt>くるま</rt></ruby>を1<ruby>台<rt>だい</rt></ruby>とめるスペースの<ruby>広さ<rt>ひろさ</rt></ruby>だよ。これがちょうど「1<ruby>坪<rt>つぼ</rt></ruby>」！',
     svgType: 'parking-spot',
   },
   {
@@ -449,7 +449,7 @@ export const SPEED_REFERENCES: ReferenceItem[] = [
     emoji: '🚲',
     value: 15,
     unitName: '<ruby>倍<rt>ばい</rt></ruby>の<ruby>速さ<rt>はやさ</rt></ruby>',
-    description: '<ruby>自転車<rt>じてんしゃ</rt></ruby>をシャカシャカこいだ時のすずしい<ruby>速さ<rt>はやさ</rt></ruby>だよ（<ruby>時速<rt>じそく</rt></ruby>15キロ）。',
+    description: '<ruby>自転車<rt>じてんしゃ</rt></ruby>をシャカシャカこいだ<ruby>時<rt>とき</rt></ruby>のすずしい<ruby>速さ<rt>はやさ</rt></ruby>だよ（<ruby>時速<rt>じそく</rt></ruby>15キロ）。',
     svgType: 'bicycle',
   },
   {
@@ -457,7 +457,7 @@ export const SPEED_REFERENCES: ReferenceItem[] = [
     name: '<ruby>自動車<rt>じどうしゃ</rt></ruby>の<ruby>速さ<rt>はやさ</rt></ruby>',
     emoji: '🚗',
     value: 60,
-    unitName: '<ruby>倍<rt>ばい</rt></ruby> of <ruby>速さ<rt>はやさ</rt></ruby>',
+    unitName: '<ruby>倍<rt>ばい</rt></ruby>の<ruby>速さ<rt>はやさ</rt></ruby>',
     description: '<ruby>街<rt>まち</rt></ruby>の<ruby>道路<rt>どうろ</rt></ruby>をブブーンと<ruby>走<rt>はし</rt></ruby>る<ruby>自動車<rt>じどうしゃ</rt></ruby>の<ruby>速さ<rt>はやさ</rt></ruby>だよ（<ruby>時速<rt>じそく</rt></ruby>60キロ）。',
     svgType: 'car-speed',
   },
@@ -476,7 +476,7 @@ export const SPEED_REFERENCES: ReferenceItem[] = [
     emoji: '🚄',
     value: 300,
     unitName: '<ruby>倍<rt>ばい</rt></ruby>の<ruby>速さ<rt>はやさ</rt></ruby>',
-    description: '<ruby>日本<rt>にほん</rt></ruby>の<ruby>誇<rt>ほこ</rt></ruby>る<ruby>超特急<rt>ちょうとっきゅう</rt></ruby>、<ruby>新幹線<rt>しんかんせん</rt></ruby>が<ruby>風<rt>かぜ</rt></ruby>のように走りぬける<ruby>速さ<rt>はやさ</rt></ruby>だよ（<ruby>時速<rt>じそく</rt></ruby>300キロ）！',
+    description: '<ruby>日本<rt>にほん</rt></ruby>の<ruby>誇<rt>ほこ</rt></ruby>る<ruby>超特急<rt>ちょうとっきゅう</rt></ruby>、<ruby>新幹線<rt>しんかんせん</rt></ruby>が<ruby>風<rt>かぜ</rt></ruby>のように<ruby>走<rt>はし</rt></ruby>りぬける<ruby>速さ<rt>はやさ</rt></ruby>だよ（<ruby>時速<rt>じそく</rt></ruby>300キロ）！',
     svgType: 'shinkansen',
   },
   {

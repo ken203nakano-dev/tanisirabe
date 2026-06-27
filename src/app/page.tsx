@@ -159,7 +159,7 @@ export default function Home() {
                       pattern="[0-9]*"
                       value={inputValue}
                       onChange={(e) => handleValueChange(e.target.value)}
-                      placeholder="すうじを入れてね"
+                      placeholder="すうじをいれてね"
                       className="main-number-input"
                       id="main-number-input-field"
                     />

@@ -1194,3 +1194,37 @@ body {
   color: var(--slate-600);
 }
 
+/* Ruby (furigana) adjustments for kids */
+ruby {
+  ruby-position: over;
+  line-height: 1.85;
+}
+
+rt {
+  font-size: 0.68em !important; /* Significantly larger than browser default (usually ~50%) */
+  font-weight: 700 !important; /* Bold enough for young readers */
+  color: var(--slate-600) !important; /* Slate color with high contrast */
+  letter-spacing: 0.04em !important; /* Add space between characters */
+}
+
+/* Ensure parents of ruby elements have enough line height to prevent overlap */
+.bubble-text,
+.finished-desc,
+.feedback-explanation,
+.category-helper-desc,
+.educational-guide-section,
+.app-header p,
+.preset-section-title,
+.preset-bubble,
+.visual-stage-title,
+.card-ratio-badge,
+.card-kid-exclamation,
+.card-description-text,
+.card-title-group h3,
+.visual-helper-text,
+.quiz-option-button,
+.quiz-loading {
+  line-height: 1.9 !important;
+}
+
+

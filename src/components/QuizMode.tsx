@@ -89,9 +89,9 @@ export const QuizMode: React.FC<QuizModeProps> = ({ onCategoryChange }) => {
   // Score evaluation badge emoji & comment
   const getScoreFeedback = () => {
     const ratio = score / questions.length;
-    if (ratio === 1) return { emoji: '👑', title: 'パーフェクト！', desc: '単位マスターだね！ものすごすぎる！🎉' };
-    if (ratio >= 0.6) return { emoji: '🏅', title: 'すごい！', desc: 'たくさん正解できたね！あとすこしで満点！🌟' };
-    return { emoji: '👍', title: 'がんばったね！', desc: 'クイズで単位のことがわかってきたかな？もう一度チャレンジしてみよう！💪' };
+    if (ratio === 1) return { emoji: '👑', title: 'パーフェクト！', desc: '<ruby>単位<rt>たんい</rt></ruby>マスターだね！ものすごすぎる！🎉' };
+    if (ratio >= 0.6) return { emoji: '🏅', title: 'すごい！', desc: 'たくさん<ruby>正解<rt>せいかい</rt></ruby>できたね！あとすこしで<ruby>満点<rt>まんてん</rt></ruby>！🌟' };
+    return { emoji: '👍', title: 'がんばったね！', desc: 'クイズで<ruby>単位<rt>たんい</rt></ruby>のことがわかってきたかな？もう<ruby>一度<rt>いちど</rt></ruby>チャレンジしてみよう！💪' };
   };
 
   const feedback = getScoreFeedback();
@@ -156,7 +156,7 @@ export const QuizMode: React.FC<QuizModeProps> = ({ onCategoryChange }) => {
               className={`quiz-option-button ${buttonClass}`}
             >
               <span className="option-letter">{['A', 'B', 'C'][index]}</span>
-              <span className="option-text">{option}</span>
+              <span className="option-text" dangerouslySetInnerHTML={{ __html: option }} />
             </button>
           );
         })}
@@ -183,7 +183,7 @@ export const QuizMode: React.FC<QuizModeProps> = ({ onCategoryChange }) => {
           )}
 
           <button type="button" onClick={handleNextClick} className="quiz-next-button">
-            {currentIndex + 1 < questions.length ? 'つぎのもんだいへ ➡️' : 'けっかを見る 🏁'}
+            {currentIndex + 1 < questions.length ? 'つぎのもんだいへ ➡️' : 'けっかを<ruby>見る<rt>み</rt></ruby> 🏁'}
           </button>
         </div>
       )}
