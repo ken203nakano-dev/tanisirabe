@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from 'next';
 import { Noto_Sans_JP } from 'next/font/google';
+import Script from 'next/script';
 import './globals.css';
 
 const notoSansJp = Noto_Sans_JP({
@@ -50,10 +51,19 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const adsenseClientId = process.env.NEXT_PUBLIC_ADSENSE_CLIENT_ID;
+
   return (
     <html lang="ja" className={`${notoSansJp.variable}`}>
       <head>
-        {/* We can insert Google AdSense tag or script here if needed */}
+        {adsenseClientId && (
+          <Script
+            async
+            src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adsenseClientId}`}
+            crossOrigin="anonymous"
+            strategy="afterInteractive"
+          />
+        )}
       </head>
       <body>{children}</body>
     </html>
